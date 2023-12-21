@@ -22,13 +22,25 @@ body {
   background: linear-gradient(150deg, #FFF 0%, #FFF4F4 84.51%);
 }
 .wrapper header {
+  height: 5.25rem;
+  width: 100%;
+  background-color: white;
+}
+.wrapper .coming-soon-container {
+  margin: 4rem 32px 5.75rem 33px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 }
-.wrapper header .logo {
-  margin: 2rem 0 2.01rem 2rem;
+.wrapper .coming-soon-container .logo-link {
+  position: absolute;
+  top: -23.1rem;
+}
+.wrapper .coming-soon-container .logo-link .logo {
+  width: 6.25rem;
+  height: 1.30538rem;
 }
 .wrapper .desktop-hero-img {
   display: none;
@@ -39,10 +51,6 @@ body {
 TYPOGRAPHY
 ---------------
 */
-.coming-soon-container {
-  margin: 4rem 32px 5.75rem 33px;
-}
-
 .coming-soon-text {
   color: #423A3A;
   font-style: normal;
@@ -137,16 +145,17 @@ FORM
   transition: background 0.4s ease;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: left;
     width: 100%;
     height: 100vh;
     text-align: left;
   }
   .wrapper header {
-    position: fixed;
+    display: none;
   }
   .wrapper .newsletter {
     display: flex;
@@ -154,7 +163,6 @@ FORM
     align-items: space-between;
     height: 100%;
     width: 100%;
-    background: url("./images/bg-pattern-desktop.svg") no-repeat left;
   }
   .wrapper .newsletter .mobile-hero-img {
     display: none;
@@ -167,10 +175,27 @@ FORM
   .wrapper .newsletter .coming-soon-container {
     order: 1;
     width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url("./images/bg-pattern-desktop.svg") no-repeat left;
+    background-size: 100% 100%;
+  }
+  .wrapper .newsletter .coming-soon-container .logo-container {
+    width: 445px;
+  }
+  .wrapper .newsletter .coming-soon-container .logo-container .logo-link {
+    z-index: 7;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 4.06rem;
+  }
+  .wrapper .newsletter .coming-soon-container .logo-container .logo-link .logo {
+    width: 9.875rem;
+    height: 2.0625rem;
   }
   .wrapper .newsletter .coming-soon-container .newsletter-text-container {
     width: 445px;
@@ -193,6 +218,18 @@ FORM
   }
   .wrapper .newsletter .coming-soon-container .newsletter-text-container #email {
     width: 27.8125rem;
-    height: 3.5rem;
+    height: 3.375rem;
+  }
+  .wrapper .newsletter .coming-soon-container .newsletter-text-container .btn {
+    background: url("./images/desktop-form-btn.svg") no-repeat center center;
+    right: -20px;
+    top: -13px;
+    width: 8.5rem;
+    height: 7rem;
+  }
+  .wrapper .newsletter .coming-soon-container .newsletter-text-container .btn:hover,
+  .wrapper .newsletter .coming-soon-container .newsletter-text-container .btn:focus,
+  .wrapper .newsletter .coming-soon-container .newsletter-text-container .btn:active {
+    background: url("./images/desktop-form-btn-active.svg") no-repeat center center;
   }
 }/*# sourceMappingURL=styles.css.map */
