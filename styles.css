@@ -118,11 +118,21 @@ FORM
   color: #CE9898;
 }
 
-#email:focus,
+#email:hover,
 #email:active,
-#email:hover {
+#email:focus {
   border: 1px solid #5b2e41;
   transition: border 0.4s ease;
+}
+
+.input-control .error {
+  color: #F96464;
+  padding: 0.25rem 0 0 2rem;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem; /* 215.385% */
+  position: absolute;
 }
 
 .btn {
@@ -219,6 +229,7 @@ FORM
   .wrapper .newsletter .coming-soon-container .newsletter-text-container #email {
     width: 27.8125rem;
     height: 3.375rem;
+    text-indent: 2rem;
   }
   .wrapper .newsletter .coming-soon-container .newsletter-text-container .btn {
     background: url("./images/desktop-form-btn.svg") no-repeat center center;

@@ -122,11 +122,21 @@ FORM
     color: #CE9898;
 }
 
-#email:focus,
+#email:hover,
 #email:active,
-#email:hover {
+#email:focus {
     border: 1px solid #5b2e41;
     transition: border 0.4s ease;
+}
+
+.input-control .error {
+    color: #F96464;
+    padding: .25rem 0 0 2rem;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem; /* 215.385% */
+    position: absolute;
 }
 
 .btn {
@@ -232,6 +242,7 @@ FORM
                     #email {
                         width: 27.8125rem;
                         height: 3.375rem;
+                        text-indent: 2rem;
                     }
 
                     .btn {
