@@ -11,7 +11,9 @@ const setError = (element, message) => {
     const errorDisplay = inputControl.querySelector('.error');
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
+    inputControl.classList.add('errorColor');
     inputControl.classList.remove('success');
+    inputControl.classList.remove('successColor');
 }
 
 const setSuccess = element => {
@@ -19,7 +21,9 @@ const setSuccess = element => {
     const errorDisplay = inputControl.querySelector('.error');
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
+    inputControl.classList.add('successColor'); // Add successColor class to change the color
     inputControl.classList.remove('error');
+    inputControl.classList.remove('errorColor');
 };
 
 const isValidEmail = email => {

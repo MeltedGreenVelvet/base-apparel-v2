@@ -58,6 +58,14 @@ TYPOGRAPHY
 ---------------
 */
 
+.successColor {
+    color: #CE9898;
+}
+
+.errorColor {
+    color: #F96464;
+}
+
 .coming-soon-text {
     color: #423A3A;
     font-style: normal;
@@ -130,13 +138,20 @@ FORM
 }
 
 .input-control .error {
-    color: #F96464;
     padding: .25rem 0 0 2rem;
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.75rem; /* 215.385% */
     position: absolute;
+}
+
+.errorColor {
+    color: #F96464;
+}
+
+.successColor {
+    color: EE8B8B;
 }
 
 .btn {
