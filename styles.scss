@@ -217,7 +217,7 @@ FORM
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                padding-left: 165px;
                 background: url('./images/bg-pattern-desktop.svg') no-repeat left;
                 background-size: 100% 100%;
 
@@ -239,6 +239,7 @@ FORM
                 }
 
                 .newsletter-text-container {
+                    margin-top: 74.91px;
                     width: 445px;
 
                     .hero-text {
@@ -255,9 +256,9 @@ FORM
 
                     .copy-text {
                         font-size: 1rem;
-                        font-style: normal;
                         font-weight: 400;
                         line-height: 1.75rem; /* 175% */
+                        margin: 2rem 0 2.5rem 0;
                     }
 
                     #email {
