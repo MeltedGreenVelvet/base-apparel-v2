@@ -142,6 +142,12 @@ FORM
   position: absolute;
 }
 
+.input-control .icon-error {
+  position: absolute;
+  left: 215px;
+  bottom: 11px;
+}
+
 .errorColor {
   color: #F96464;
 }
@@ -245,6 +251,10 @@ FORM
     width: 27.8125rem;
     height: 3.375rem;
     text-indent: 2rem;
+  }
+  .wrapper .newsletter .coming-soon-container .newsletter-text-container .input-control .icon-error {
+    left: 305px;
+    bottom: 15px;
   }
   .wrapper .newsletter .coming-soon-container .newsletter-text-container .btn {
     background: url("./images/desktop-form-btn.svg") no-repeat center center;
