@@ -148,8 +148,8 @@ FORM
 
 .input-control .icon-error {
     position: absolute;
-    left: 215px;
-    bottom: 11px;
+    left: 13.438rem;
+    bottom: 0.688rem;
 }
 
 .errorColor {
@@ -157,13 +157,13 @@ FORM
 }
 
 .successColor {
-    color: EE8B8B;
+    color: #EE8B8B;
 }
 
 .btn {
     all: unset;
     position: absolute;
-    right: -19px;
+    right: -1.188rem;
     top: -3.27%;
     z-index: 5;
     cursor: pointer;
@@ -217,7 +217,7 @@ FORM
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding-left: 165px;
+                padding-left: 10.313rem;
                 background: url('./images/bg-pattern-desktop.svg') no-repeat left;
                 background-size: 100% 100%;
 
@@ -239,8 +239,8 @@ FORM
                 }
 
                 .newsletter-text-container {
-                    margin-top: 74.91px;
-                    width: 445px;
+                    margin-top: 4.682rem;
+                    width: 27.813rem;
 
                     .hero-text {
                         font-size: 4rem;
@@ -257,8 +257,9 @@ FORM
                     .copy-text {
                         font-size: 1rem;
                         font-weight: 400;
-                        line-height: 1.75rem; /* 175% */
-                        margin: 1rem 0 2.5rem 0;
+                        line-height: 1.75rem;
+                        margin: 1.1rem 0 2.5rem 0;
+                        letter-spacing: .1px;
                     }
 
                     #email {
@@ -269,14 +270,14 @@ FORM
                     }
 
                     .input-control .icon-error {
-                        left: 305px;
-                        bottom: 15px;
+                        left: 19.063rem;
+                        bottom: 0.938rem;
                     }
 
                     .btn {
                         background: url('./images/desktop-form-btn.svg') no-repeat center center;    
-                        right: -20px;
-                        top: -13px;
+                        right: -1.25rem;
+                        top: -0.813rem;
                         width: 8.5rem;
                         height: 7rem;
                     }
